@@ -1,22 +1,33 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+
+html,
+body {
+  overflow-y: hidden;
+}
+
+.map-area {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.map-area img {
+  width: 100%;
+}
+
 #chartdiv {
   width: 100%;
   height: 500px;
 }
 
 .map-marker {
-  width: 10px;
-  height: 10px;
-}
-
-.map-marker.map-clickable {
-  cursor: pointer;
+  width: 25px;
+  height: 25px;
 }
 
 .pulse {
-  width: 10px;
-  height: 10px;
-  border: 1px solid #cdbc10;
+  width: 25px;
+  height: 25px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -30,9 +41,9 @@
   background: transparent;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
-  border-radius: 60px;
-  height: 50px;
-  width: 50px;
+  border-radius: 100px;
+  height: 70px;
+  width: 70px;
   -webkit-animation: pulse 3s ease-out;
   -moz-animation: pulse 3s ease-out;
   animation: pulse 3s ease-out;
@@ -40,8 +51,8 @@
   -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   position: absolute;
-  top: -20px;
-  left: -20px;
+  top: -22.5px;
+  left: -22.5px;
   z-index: 1;
   opacity: 0;
 }
@@ -51,40 +62,49 @@
     -moz-transform: scale(0);
     opacity: 0.0;
   }
+
   25% {
     -moz-transform: scale(0);
     opacity: 0.1;
   }
+
   50% {
     -moz-transform: scale(0.1);
     opacity: 0.3;
   }
+
   75% {
     -moz-transform: scale(0.5);
     opacity: 0.5;
   }
+
   100% {
     -moz-transform: scale(1);
     opacity: 0.0;
   }
 }
+
 @-webkit-keyframes "pulse" {
   0% {
     -webkit-transform: scale(0);
     opacity: 0.0;
   }
+
   25% {
     -webkit-transform: scale(0);
     opacity: 0.1;
   }
+
   50% {
     -webkit-transform: scale(0.1);
     opacity: 0.3;
   }
+
   75% {
     -webkit-transform: scale(0.5);
     opacity: 0.5;
   }
+
   100% {
     -webkit-transform: scale(1);
     opacity: 0.0;
