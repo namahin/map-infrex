@@ -3,21 +3,21 @@
 html,
 body {
   overflow-y: hidden;
-  background: #fff
+  background-color: transparent;
 }
 
 .map-area {
   max-width: 800px;
   margin: auto;
   position: relative;
-  background-color: #fff;
+  background-color: transparent;
   transform: scale(.9);
   position: relative;
 }
 
 .map-area img {
   width: 100%;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 #chartdiv {
